@@ -11,9 +11,9 @@
 </head>
 
 <body>
-<div id="mainDiv">
+<div id="mainDiv" style="position:absolute; top:100px; left:100px;">
     <div id="content">
-        <div id="code">
+        <div id="code" >
             <span class="comments">亲爱的苏博洋女士-：</span><br/><br/>
             <span class="comments">值此深秋</span><br/>
             <span class="comments">我二位在此恭贺</span><br/><br/>
@@ -27,7 +27,7 @@
         </div>
         
     </div>
-    <div id="loveHeart">
+    <div id="loveHeart" style="position:absolute; bottom:100px; left:100px;">
             <canvas id="garden"></canvas>
             <div id="words">
                 <div id="messages">
@@ -37,7 +37,7 @@
                     <img src="./images/sr.png">
                 </div>
             </div>
-        </div>
+    </div>
     <div id="copyright">
         <center>
             <link rel="stylesheet" href="./css/cuplayer.css">
@@ -78,10 +78,9 @@
                     });
                     document.addEventListener('DOMContentLoaded', function () {
                      function audioAutoPlay() {
-                        var audio = document.getElementById('main_audio');
-                        audio.play();
+                        a.play();
                         document.addEventListener("WeixinJSBridgeReady", function () {
-                            audio.play();
+                            a.play();
                         }, false);
                      }
                      audioAutoPlay();

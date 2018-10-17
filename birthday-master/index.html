@@ -135,7 +135,7 @@ function autoPlayMusic() {
     document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
 }
 function musicPlay(isPlay) {
-    var media = document.querySelector('#main_audio');
+    var media = document.getElementById('main_audio');
     if (isPlay && media.paused) {
         media.play();
     }

@@ -102,6 +102,9 @@
         $("#copyright").css("bottom", "10px");
         document.execCommand("stop");
     } else {
+    	
+        adjustCodePosition();
+        $("#code").typewriter();
         setTimeout(function () {
             startHeartAnimation();
         }, 5000);
@@ -111,8 +114,6 @@
             timeElapse(together);
         }, 500);
 
-        adjustCodePosition();
-        $("#code").typewriter();
     }
 
 	// 音乐播放
